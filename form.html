@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Here is internal styling -->
+    <style>
+        body {
+            max-width: 500px;
+            margin: auto;
+        }
+
+/* icon is a class given to image */
+        .icon {
+            width: 15px;
+            padding: 3px;
+            background-color: rgb(226, 226, 236);
+            color: #000;
+            text-align: center;
+        }
+    </style>
+
+    <title>Form Practice</title>
+</head>
+
+<body>
+    <nav align="center">
+        <a href="index.html">First CV Practice</a> |
+        <a href="secondcv.html">Second CV Practice</a> |
+        <a href="listspractice.html">Lists Practice</a> |
+        <a href="imgpractice.html">Images Practice</a>
+        <a href="alignpractice.html">Alignment Practice</a> |
+        <a href="imglist.html">Img and List</a> |
+        <a href="tablepractice.html">Table Practice</a>
+    </nav>
+    <br>
+    <h1>Provide Personal Information</h1>
+    <form>
+        <p style="display: flex; margin-bottom: 16px; width: 100%;">
+            <label for="" style="margin-right:87px;">First Name</label>
+            <img src="icons/firstname.png" width="3px" height="15px" alt="" class="icon">
+            <input type="text" name="firstName" placeholder="First Name">
+        </p>
+        <p style="display: flex; margin-bottom: 16px; width: 100%;"><label for="lastName" style="margin-right:90px;">Last Name</label>
+            <img src="icons/lastname.png" width="3px" height="15px" alt="" class="icon">
+            <input type="text" name="lastName" placeholder="Last Name">
+        </p>
+        <p style="display: flex; margin-bottom: 16px; width: 100%;"><label for="email" style="margin-right:115px;">E-mail</label>
+            <img src="icons/email.png" width="3px" height="15px" alt="" class="icon" >
+            <input type="text" name="email" placeholder="E-mail Address" >
+        </p>
+        <p style="display: flex; margin-bottom: 16px; width: 100%;"> <label for="phone" style="margin-right:117px;">Phone</label>
+            <img src="icons/phone.png" width="3px" height="15px" alt="" class="icon">
+            <input type="text" name="phone" placeholder="(042)555-1212 " >
+        </p>
+        <p style="display: flex; margin-bottom: 16px; width: 100%;"> <label for="address" style="margin-right:105px;">Address</label>
+            <img src="icons/address.png" width="3px" height="15px" alt="" class="icon">
+            <input type="text" name="address" placeholder="Address" >
+        </p>
+        <p style="display: flex; margin-bottom: 16px; width: 100%;"> <label for="city" style="margin-right:130px;">City</label>
+            <img src="icons/city.png" width="3px" height="15px" alt="" class="icon">
+            <input type="text" name="city"  placeholder="City" >
+        </p>
+        <p style="display: flex; margin-bottom: 16px; width: 100%;"> 
+            <label for="states" style="margin-right:123px;">State</label>
+            <img src="icons/state.png" width="3px" height="15px" alt="" class="icon">
+            <select name="state" id="states" style="width: 36%;">
+                <option value="" disabled selected > Please Select Your State </option>
+                <option\ value="california">California</option>
+                <option value="florida">Florida</option>
+                <option value="lowa">Lowa</option>
+                <option value="georgia">Georgia</option>
+                <option value="Alaska">Alaska</option>
+            </select>
+        </p>
+        <p style="display: flex; margin-bottom: 16px; width: 100%;"><label for="" style="margin-right:95px;">Zip Code</label>
+            <img src="icons/city.png" width="3px" height="15px" alt="" class="icon">
+            <input type="text" name="zipCode"  placeholder="Zip Code" >
+        </p>
+
+        <p style="display: flex; margin-bottom: 16px; width: 100%;"><label for="" style="margin-right:105px;">Website</label>
+            <img src="icons/web.png" width="3px" height="15px" alt="" class="icon">
+            <input type="text" name="website"  placeholder="Website or domain name" >
+        </p>
+
+        <p style="display: flex; margin-bottom: 16px; width: 100%;">
+            <label>Do you have hosting?</label>
+            <input type="radio" name="haveHosting" id="yes" value="yes"> <label for="yes">Yes</label>
+            <input type="radio" name="haveHosting" id="no" value="no"> <label for="no">No</label>
+        </p>
+        <p style="display: flex; margin-bottom: 16px; width: 100%;"><label for="" style="margin-right:30px;">Project Description</label>
+            <img src="icons/project.png" width="20px" alt=""  class="icon" style="width: 20px; background-color: rgb(226, 226, 236); object-fit: contain;">
+            <textarea name="" id="" cols="20" rows="2"  placeholder="Project Description" ></textarea>
+        </p>
+        <p style="display: flex; margin-bottom: 16px; width: 100%;">
+             <label style="margin-right:105px;">Hobbies</label>
+            <img src="icons/hobbies.png" width="3px" height="15px" alt="" class="icon">
+           
+            <input type="checkbox" name="hobbies" id="reading" value="readinghobby"> <label for="reading">Reading</label>
+            <input type="checkbox" name="hobbies" id="gaming" value="gaminghobby"> <label for="gaming">Gaming</label>
+            <input type="checkbox" name="hobbies" id="cooking" value="cookinghobby"> <label for="cooking">Cooking</label>
+        </p>
+        <p style="display: flex; margin-bottom: 16px; width: 100%; margin-left: 150px;"><input type="submit" value="Send"
+                style="background-color: orange; color: white; border: none; padding: 12px; ">
+            <img src="icons/send.png" width="3px" height="15px" alt="" class="icon" style=" color: white; background-color: orange; padding: 12px;">
+           
+        </p>
+    </form>
+</body>
+
+</html>
